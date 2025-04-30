@@ -1,0 +1,406 @@
+.home {
+  background-color: #8ed1e2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.home .div {
+  background-color: #8ed1e2;
+  height: 932px;
+  position: relative;
+  width: 430px;
+}
+
+.home .overlap {
+  height: 90px;
+  left: 51px;
+  position: absolute;
+  top: 661px;
+  width: 92px;
+}
+
+.home .group {
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 92px;
+}
+
+.home .overlap-group {
+  background-color: #eefeff;
+  border-radius: 10px;
+  height: 90px;
+  position: relative;
+  width: 90px;
+}
+
+.home .text-wrapper {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 64px;
+}
+
+.home .img {
+  height: 40px;
+  left: 30px;
+  position: absolute;
+  top: 17px;
+  width: 30px;
+}
+
+.home .overlap-2 {
+  background-color: #eefeff;
+  border-radius: 10px;
+  height: 418px;
+  left: 21px;
+  position: absolute;
+  top: 196px;
+  width: 385px;
+}
+
+.home .overlap-3 {
+  height: 352px;
+  left: 19px;
+  position: absolute;
+  top: 31px;
+  width: 347px;
+}
+
+.home .group-2 {
+  height: 352px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 347px;
+}
+
+.home .rectangle {
+  background-color: #639497;
+  border-radius: 10px;
+  height: 61px;
+  left: 0;
+  position: absolute;
+  top: 219px;
+  width: 345px;
+}
+
+.home .group-3 {
+  background-color: #639497;
+  border-radius: 10px;
+  height: 61px;
+  left: 0;
+  position: absolute;
+  top: 291px;
+  width: 345px;
+}
+
+.home .group-4 {
+  background-color: #639497;
+  border-radius: 10px;
+  height: 61px;
+  left: 2px;
+  position: absolute;
+  top: 146px;
+  width: 345px;
+}
+
+.home .group-5 {
+  background-color: #639497;
+  border-radius: 10px;
+  height: 61px;
+  left: 0;
+  position: absolute;
+  top: 73px;
+  width: 345px;
+}
+
+.home .group-6 {
+  background-color: #639497;
+  border-radius: 10px;
+  height: 61px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+  width: 345px;
+}
+
+.home .vector-2 {
+  height: 28px;
+  left: 12px;
+  position: absolute;
+  top: 307px;
+  width: 28px;
+}
+
+.home .vector-3 {
+  height: 28px;
+  left: 12px;
+  position: absolute;
+  top: 235px;
+  width: 28px;
+}
+
+.home .vector-4 {
+  height: 28px;
+  left: 12px;
+  position: absolute;
+  top: 162px;
+  width: 28px;
+}
+
+.home .vector-5 {
+  height: 28px;
+  left: 12px;
+  position: absolute;
+  top: 89px;
+  width: 28px;
+}
+
+.home .vector-6 {
+  height: 28px;
+  left: 12px;
+  position: absolute;
+  top: 16px;
+  width: 28px;
+}
+
+.home .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-size: 15px;
+  font-weight: 800;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+}
+
+.home .location-bar {
+  height: 90px;
+  left: 170px;
+  position: absolute;
+  top: 661px;
+  width: 92px;
+}
+
+.home .rectangle-2 {
+  background-color: #eefeff;
+  border-radius: 10px;
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 90px;
+}
+
+.home .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 64px;
+}
+
+.home .vector-7 {
+  height: 40px;
+  left: 25px;
+  position: absolute;
+  top: 17px;
+  width: 39px;
+}
+
+.home .report-bar {
+  height: 90px;
+  left: 169px;
+  position: absolute;
+  top: 785px;
+  width: 92px;
+}
+
+.home .text-wrapper-4 {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 62px;
+}
+
+.home .icon-bullhorn {
+  height: 41px;
+  left: 24px;
+  position: absolute;
+  top: 12px;
+  width: 41px;
+}
+
+.home .community-bar {
+  height: 90px;
+  left: 51px;
+  position: absolute;
+  top: 785px;
+  width: 92px;
+}
+
+.home .text-wrapper-5 {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 62px;
+}
+
+.home .vector-8 {
+  height: 46px;
+  left: 22px;
+  position: absolute;
+  top: 10px;
+  width: 46px;
+}
+
+.home .activity-bar {
+  height: 90px;
+  left: 289px;
+  position: absolute;
+  top: 661px;
+  width: 92px;
+}
+
+.home .text-wrapper-6 {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 64px;
+}
+
+.home .vector-9 {
+  height: 41px;
+  left: 25px;
+  position: absolute;
+  top: 17px;
+  width: 41px;
+}
+
+.home .donate-bar {
+  height: 90px;
+  left: 289px;
+  position: absolute;
+  top: 785px;
+  width: 92px;
+}
+
+.home .text-wrapper-7 {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 62px;
+}
+
+.home .vector-10 {
+  height: 28px;
+  left: 20px;
+  position: absolute;
+  top: 22px;
+  width: 48px;
+}
+
+.home .search-bar-instance {
+  left: 21px !important;
+  position: absolute !important;
+  top: 104px !important;
+}
+
+.home .text-wrapper-8 {
+  color: #000000;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-size: 20px;
+  font-weight: 800;
+  left: 110px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 623px;
+  white-space: nowrap;
+}
+
+.home .header {
+  background-color: transparent;
+  height: 120px;
+  left: 0;
+  position: absolute;
+  top: -22px;
+  width: 430px;
+}
+
+.home .overlap-4 {
+  height: 98px;
+  position: relative;
+  top: 22px;
+  width: 430px;
+}
+
+.home .rectangle-3 {
+  background-color: #679dcc;
+  height: 76px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 430px;
+}
+
+.home .wecwater {
+  height: 98px;
+  left: 310px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 120px;
+}
+
+.home .vector-11 {
+  height: 22px;
+  left: 22px;
+  position: absolute;
+  top: 27px;
+  width: 26px;
+}
+
+.home .vector-12 {
+  height: 32px;
+  left: 65px;
+  position: absolute;
+  top: 22px;
+  width: 25px;
+}
