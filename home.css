@@ -1,0 +1,184 @@
+/* Base styles for the container */
+.home-container {
+  font-family: sans-serif; /* Contoh font */
+  background-color: #f0f8ff; /* Contoh warna latar belakang */
+  min-height: 100vh; /* Memastikan mengisi seluruh tinggi viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pusatkan konten secara horizontal */
+  padding: 20px; /* Berikan sedikit ruang di tepi */
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran elemen */
+}
+
+/* Header styles */
+.header {
+  background-color: #e0f2f7; /* Contoh warna latar belakang header */
+  padding: 10px 10px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.header-all {
+  display: flex;
+  justify-content: space-between; /* Memastikan konten kiri dan kanan terpisah */
+  align-items: center; /* Memastikan elemen-elemen di tengah secara vertikal */
+}
+
+.header-kiri {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.header-kanan {
+  display: flex;
+  justify-content: flex-end; /* Jika logo perlu berada di ujung kanan */
+}
+
+.menu-icon{
+  height: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.user-icon {
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .wecwater-logo {
+    height: 80px;
+    margin-left: auto; /* Ini yang mendorong logo ke kanan */
+  }
+
+/* Search bar styles */
+.search-bar {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Contoh lebar maksimum search bar */
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Contoh border */
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  font-size: 1em;
+  outline: none;
+  color: #000000;
+}
+
+.search-icon {
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Forum section styles */
+.forum-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px; /* Lebar maksimum */
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.forum-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left; /* Pusatkan judul */
+}
+
+.forum-list {
+  display: flex;
+  flex-direction: column; /* Membuat item-item dalam forum bisa menyesuaikan baris */
+  gap: 15px; /* Jarak antar forum item */
+  justify-content: center; /* Pusatkan item secara horizontal */
+}
+
+.forum-item {
+  background-color: #e0f7fa; /* Warna latar belakang item */
+  padding: 10px 20px; /* Lebar horizontal lebih besar agar lebih memanjang */
+  border-radius: 5px; /* Sudut sedikit melengkung */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 2px solid #00acc1; /* Warna border untuk kontur */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi saat hover */
+}
+
+.forum-item:hover {
+  transform: scale(1.05); /* Membesarkan ukuran forum item sedikit saat hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan ketika hover */
+}
+
+.user-icon-forum {
+  height: 40px; /* Ukuran ikon */
+  width: 40px; /* Pastikan lebar dan tinggi ikon sama */
+  object-fit: cover; /* Memastikan gambar tidak pecah atau melenceng */
+}
+
+/* More features section styles */
+.more-features-section {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px; /* Contoh lebar maksimum more features section */
+  box-sizing: border-box;
+}
+
+.more-features-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333; /* Contoh warna judul */
+  text-align: center; /* Pusatkan judul */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom yang sama lebarnya */
+  gap: 10px; /* Jarak antar item grid */
+}
+
+.feature-item {
+  background-color: #e0f7fa; /* Warna latar belakang item */
+  padding: 20px 20px; /* Lebar horizontal lebih besar agar lebih memanjang */
+  border-radius: 10px; /* Sudut sedikit melengkung */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 2px solid #00acc1; /* Warna border untuk kontur */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi saat hover */
+}
+.feature-item:hover {
+  transform: scale(1.05); /* Membesarkan ukuran forum item sedikit saat hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan ketika hover */
+}
+.feature-icon {
+  height: 30px; /* Contoh tinggi ikon fitur */
+  margin-bottom: 8px;
+  color: #008080; /* Contoh warna ikon fitur */
+}
+
+.feature-text {
+  font-size: 0.9em;
+  color: #000000; /* Contoh warna teks fitur */
+  padding: 10px;
+}

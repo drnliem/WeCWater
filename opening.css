@@ -1,0 +1,92 @@
+.opening {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.opening .overlap-wrapper {
+  background-color: #ffffff;
+  height: 932px;
+  width: 430px;
+}
+
+.opening .overlap {
+  height: 430px;
+  position: relative;
+  top: 0px;
+}
+
+.opening .group {
+  height: 430px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 430px;
+}
+
+.opening .overlap-group {
+  height: 430px;
+  position: relative;
+}
+
+.opening .rectangle {
+  height: 21px;
+  left: 167px;
+  position: absolute;
+  top: 301px;
+  width: 95px;
+}
+
+.opening .wecwater {
+  height: 430px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 430px;
+}
+
+.opening .overlap-group-wrapper {
+  height: 32px;
+  left: 108px;
+  position: absolute;
+  top: 300px;
+  width: 217px;
+}
+
+.opening .div {
+  height: 32px;
+  position: relative;
+  width: 215px;
+
+}
+
+ .opening .button {
+cursor: pointer;
+ }
+
+.opening .img {
+  height: 21px;
+  left: 59px;
+  position: absolute;
+  top: 4.9px;
+  width: 95px;
+}
+
+.opening .text-wrapper {
+  color: #ffffff;
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 15px;
+  font-weight: 700;
+  height: 32px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 22.5px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 215px;
+  
+}
