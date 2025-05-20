@@ -1,8 +1,16 @@
-import React from "react";
-import * as image from '../imageimport.jsx';
+'use client';
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import '../style/home.css';
+import * as image from '../imageimport.jsx';
+
 
 export const Home = () => {
+  const router = useRouter();
+  const goToReport = () => {
+    router.push('/report');
+  };
+
   return (
     <div className="home-container">
       <header className="header">
@@ -64,7 +72,7 @@ export const Home = () => {
             <img className="feature-icon" alt="Community" src={image.community_icon} />
             <div className="feature-text">Community</div>
             </button>
-          <button className="feature-item">
+          <button className="feature-item" onClick={goToReport}>
             <img className="feature-icon" alt="Report" src={image.report_icon} />
             <div className="feature-text">Report</div>
             </button>
