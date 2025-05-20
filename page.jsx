@@ -11,20 +11,38 @@ export const Forum = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-
+  
     if (!email || !password) {
       setError('Email dan Password harus diisi');
       return;
     }
-
-    if (email === 'admin@example.com' && password === 'admin123') {
-      router.push('/home');
-    } else {
-      setError('Email atau Password salah');
+  
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+  
+      const data = await response.json();
+  
+      if (response.ok) {
+        // Optional: Simpan data user ke localStorage / cookie
+        // localStorage.setItem('user', JSON.stringify(data.user));
+  
+        router.push('/home');
+      } else {
+        setError(data.message || 'Login gagal');
+      }
+  
+    } catch (error) {
+      console.error('Login error:', error);
+      setError('Terjadi kesalahan, coba lagi nanti');
     }
   };
+  
 
   return (
     <div className="forum" data-model-id="73:3">
@@ -64,8 +82,12 @@ export const Forum = () => {
             </form>
           </div>
 
-          <div className="text-wrapper">Forgot Password?</div>
-          <div className="div">Sign Up</div>
+          <div className="text-wrapper">
+            <a href="/forgetpass">Forgot Password?</a>
+            </div>
+          <div className="div">
+            <a href="/signup">Sign Up</a>
+            </div>
 
           <Image
             className="wecwater"
