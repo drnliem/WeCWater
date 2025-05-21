@@ -4,45 +4,39 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import '../style/forum.css';
 import { wecwater, login_button } from '../imageimport.jsx';
+import { login } from '@/lib/authservice';
 
-export const Forum = () => {
+export default function LoginPage() {
   const router = useRouter();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  const handleLogin = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-  
+    setError('');
+    setLoading(true);
+
     if (!email || !password) {
-      setError('Email dan Password harus diisi');
+      setError('Email dan password harus diisi');
+      setLoading(false);
       return;
     }
-  
+
     try {
-      const response = await fetch('/api/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
-      });
-  
-      const data = await response.json();
-  
-      if (response.ok) {
-        // Optional: Simpan data user ke localStorage / cookie
-        // localStorage.setItem('user', JSON.stringify(data.user));
-  
-        router.push('/home');
-      } else {
-        setError(data.message || 'Login gagal');
-      }
-  
-    } catch (error) {
-      console.error('Login error:', error);
-      setError('Terjadi kesalahan, coba lagi nanti');
+      const user = await login(email, password);
+      console.log('User logged in:', user);
+      // redirect ke halaman home setelah login sukses
+      router.push('/home');
+    } catch (err) {
+      console.error('Login error:', err);
+      setError('Login gagal: ' + (err.message || 'Terjadi kesalahan'));
+    } finally {
+      setLoading(false);
     }
   };
-  
 
   return (
     <div className="forum" data-model-id="73:3">
@@ -52,7 +46,7 @@ export const Forum = () => {
             {error && <div className="error-message">{error}</div>}
             <div className="text-wrapper-2">Login</div>
 
-            <form onSubmit={handleLogin} className="login-form">
+            <form onSubmit={handleSubmit} className="login-form">
               <input
                 type="email"
                 id="email"
@@ -100,6 +94,6 @@ export const Forum = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Forum;
+
