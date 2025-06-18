@@ -6,7 +6,7 @@ Built With
 - JSX Page Routing (Built-in in Next.js)
 
 how to run?
-1.git clone https://github.com/yourusername/wecwater.git -> cd wecwater
+1.git clone https://github.com/drnliem/WeCWater.git -> cd WeCWater
 2.pip install -r requirements.txt
 3.extract the folder final.zip - > cd final
 4.npm install
